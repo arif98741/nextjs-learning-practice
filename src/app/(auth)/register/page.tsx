@@ -1,6 +1,7 @@
-export default function register(){
-    return <>
-               register page
-            </>
-    
+export default function register() {
+  return (
+    <>
+      <h2>hello from register page</h2>
+    </>
+  );
 }

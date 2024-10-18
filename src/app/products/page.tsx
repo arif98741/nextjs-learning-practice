@@ -1,16 +1,22 @@
-export default function ProductList()
-{
-    return (
-        <>
-            <h1>products</h1>
-            <ul>
-                <li>proudct 1</li>
-                <li>proudct 2</li>
-                <li>proudct 3</li>
-                <li>proudct 4</li>
-                <li>proudct 5</li>
-                <li>proudct 6</li>
-            </ul>
-        </>
-    )
+import Link from "next/link";
+
+export default function ProductList() {
+  return (
+    <>
+      <h1>products</h1>
+      <ul>
+        <h2>
+          <Link href="/products/1">product 1</Link>
+        </h2>
+        <h2>
+          <Link href="/products/2">product 2</Link>
+        </h2>
+        <h2>
+          <Link href="/products/3">product 3</Link>
+        </h2>
+      </ul>
+
+      <Link href="/">Home</Link>
+    </>
+  );
 }
